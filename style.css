@@ -84,8 +84,16 @@
      font-size: 14px;
      color: #fff;
  }
+
+ /*--------text box mobile--------*/
+
+@media(max-width: 700px){
+    .text-box{
+        transform: scale(0.8);
+    }
+}
  
- span{
+span{
      color: #f44336;
  }
  
@@ -167,11 +175,11 @@
  
  /*---------profile mobile----*/
  
- @media(max-width: 700px){
-     .img-box{
-         visibility: hidden;
-     }
- }
+@media(max-width: 700px){
+    .img-box{
+        transform: scale(0);
+    }
+}
  
  
  /*------about----*/
@@ -263,6 +271,8 @@
      text-align: left;
  }
  
+/*------------progress bar-----*/
+
  .progress-bar{
      background: #959595;
      width: 600px;
@@ -352,12 +362,11 @@
  
  /*-------progress bar mobile------*/
  
- @media(max-width: 700px){
-     .skills-col{
-     display: flex;
-     flex-direction: column;
-     }
- }
+@media(max-width: 700px){
+    .skills-lang{
+        transform: scale(0.7);
+    }
+}
  
  
  /*-------portfolio---*/
@@ -374,12 +383,16 @@
      border-radius: 10px;
      margin-bottom: 30px;
      position: relative;
-     overflow: hidden;
+     overflow: hidden
  }
  
  .portfolio-col img{
      width: 100%;
      display: block;
+ }
+
+ div .portfolio-col h3{
+    font-size: 15px;
  }
  
  .layer{
@@ -454,6 +467,21 @@
  
  .swiper .swiper-pagination{
      height: 25%;
+ }
+
+ /*-----gallery mobile-------*/
+
+@media(max-width: 700px){
+    .gallery-col{
+        height: 50vh;
+    }
+}
+
+
+@media(max-width){
+    .swiper .swiper-pagination{
+        height: 50%;
+    }
  }
  
  
