@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en" class="bg-color">
+<head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <section>
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html"><img src="images/logo-removebg-preview.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home" title="Home">HOME</a></li>
+                    <li><a href="#about" title="About">ABOUT</a></li>
+                    <li><a href="#skills" title="Skills">SKILLS</a></li>
+                    <li><a href="#portfolio" title="Portfolio">PORTFOLIO</a></li>
+                    <li><a href="#gallery" title="Gallery">GALLERY</a></li>
+                    <li><a href="#contact" title="Contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>Hey! I'm <span>Adam Zakwan</span></h1>
+    <p>An aspired computer scientist. Loves to learn something new everyday. Sport enthuasist. Prefer tea over coffee.</p>
+    <a href="Resume.pdf" class="resume-btn" >Download CV</a>
+</div>
+
+<div class="img-box">
+    <img src="images/Prefect-removebg-preview.png">
+</div>
+    
+
+</section>
+
+<!---------About--------->
+
+<section class="about" id="about">
+    <h1>About Me</h1>
+    <p>First to be born to a clinic assistant and a lorry driver, I am now a Yayasan Khazanah Global Scholar currently studying A-Level at Kolej Yayasan UEM, Kuala Kubu Bharu, Selangor. I am planning to pursue computer science for my degree in either United States or United Kingdom.</p>
+
+    <div class="row">
+        <div class="about-col">
+            <h3>Where are you from?</h3>
+            <p>I'm from Kota Bharu, Kelantan, Malaysia</p>
+        </div>
+        <div class="about-col">
+            <h3>What is your hobby?</h3>
+            <p>I like to read current issues, funfacts, I do watch kdrama and anime.</p>
+        </div>
+        <div class="about-col">
+            <h3>What are your future plans?</h3>
+            <p>Living with some sorts of difficulties, I aim to help everyone who have the same childhood as me and give them chance that they can be what they aspire to be.</p>
+        </div>
+    </div>
+</section>
+
+<!-------Skills------->
+
+<section class="skills" id="skills">
+    <h1>My Skills</h1>
+    <p>My coding progress so far.</p>
+        <div class="skills-col">
+            <div class="skills-lang">
+                <h2>English</h2>
+                <div class="progress-bar">
+                    <div class="english"><span>90%</span></div>
+                </div>
+                <h2>HTML5</h2>
+                <div class="progress-bar">
+                    <div class="html"><span>80%</span></div>
+                </div>
+                <h2>CSS3</h2>
+                <div class="progress-bar">
+                    <div class="css"><span>65%</span></div>
+                </div>
+                <h2>JavaScript</h2>
+                <div class="progress-bar">
+                    <div class="javascript"><span>20%</span></div>
+                </div>
+            </div>
+        </div>
+
+
+<!-----------Portfolio--------->
+
+<section class="portfolio" id="portfolio">
+    <h1>My Portfolio</h1>
+    <p>My achievements, involvements and leaderships varies from school to international Level.</p>
+
+    <div class="row">
+        <div class="portfolio-col">
+            <img src="images/SPM.jpg">
+            <div class="layer">
+                <h3>Sijil Pelajaran Malaysia</h3>
+            </div>
+        </div>
+        <div class="portfolio-col">
+            <img src="images/mockiv.jpg">
+            <div class="layer">
+                <h3>Vice Headboy SM Sains Tengku Muhammad Faris Petra</h3>
+            </div>
+        </div>
+        <div class="portfolio-col">
+            <img src="images/Yayasan Khazanah Awards Day.jpg">
+            <div class="layer">
+                <h3>Yayasan Khazanah Awards Day</h3>
+            </div>
+        </div>
+        <div class="portfolio-col">
+            <img src="images/dikir barat.jpg">
+            <div class="layer">
+                <h3>Head of Dikir Barat Performance for EOSD x CPN</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----------Gallery---------->
+
+<section class="gallery" id="gallery">
+    <h1>Gallery</h1>
+    <p>Sneak peek of my past.</p>
+
+    <div class="row">
+        <div class="gallery-col">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src ="images/Hockey.jpg"></div>
+                  <div class="swiper-slide"><img src ="images/bola form5.jpg"></div>
+                  <div class="swiper-slide"><img src ="images/Hoki Penang.jpg"></div>
+                  <div class="swiper-slide"><img src ="images/with yafik.jpg"></div>
+                  <div class="swiper-slide"><img src ="images/amitans spm.jpg"></div>
+                  <div class="swiper-slide"><img src ="images/tutor.jpg"></div>
+                  <div class="swiper-slide"><img src ="images/ipgkkb.jpg"></div>
+                  <div class="swiper-slide"><img src ="images/study.jpg"></div>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+        </div>
+    </div>
+
+</section>
+</section>
+
+
+<!--------Footer----->
+
+<section class="footer" id="contact">
+    <h2>Contact</h2>
+    <p>Keep in touch with me.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/adam.zakwan69/"><i class="fa fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/azakwanzul"><i class="fa fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/adam-zakwan-011a54249/"><i class="fa fa fa-linkedin"></i></a>
+        <a href="https://github.com/azakwanzul"><i class="fa fa fa-github"></i></a>
+        <a href="https://t.me/azakwanzul"><i class="fa fa fa-telegram"></i></a>
+    </div>
+    </div>
+    <p>Copyright <i class="fa fa fa-copyright"></i> 2022 Adam Zakwan Zulkifli</p>
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<!-------Slider gallery-------->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    
+    // Optional parameters
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });</script>
+
+
+</body>
+</html>
