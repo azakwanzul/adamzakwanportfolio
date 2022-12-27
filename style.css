@@ -70,7 +70,7 @@
      top: 40%;
      left: 5%;
      transform: translate(-50%,-50);
-     text-align: left;
+     text-align: center;
      margin-left: 10px;
  }
  
@@ -80,7 +80,6 @@
  
  .text-box p{
      margin: 10px 0 40px;
-     margin-left: -10px;
      font-size: 14px;
      color: #fff;
  }
@@ -152,34 +151,6 @@ span{
      padding: 30px;
      }
  }
- 
- /*-----profile picture------*/
- 
- .img-box{
-     width: 45%;
-     height: 80%;
-     position: absolute;
-     bottom: 0;
-     right: 0;
- }
- 
- .img-box img{
-     height: 100%;
-     position: absolute;
-     left: 50%;
-     bottom: 0;
-     transform: translateX(-50%);
-     opacity: 1;
-     filter: brightness(none);
- }
- 
- /*---------profile mobile----*/
- 
-@media(max-width: 700px){
-    .img-box{
-        transform: scale(0);
-    }
-}
  
  
  /*------about----*/
