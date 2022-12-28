@@ -505,11 +505,14 @@ span{
     .gallery-col{
         height: 50vh;
     }
-    
-    .swiper .swiper-pagination{
+}
+
+@media(min-width: 300px){
+    .swiper .swiper-button-prev, .swiper .swiper-button-next{
         visibility: hidden;
     }
 }
+
 
  
  /*---------footer-------*/
