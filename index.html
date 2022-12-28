@@ -10,32 +10,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
-    <section>
-    <section class="header" id="home">
-        <nav>
-            <a href="index.html"><img src="images/logo-removebg-preview.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="#home" title="Home">HOME</a></li>
-                    <li><a href="#about" title="About">ABOUT</a></li>
-                    <li><a href="#skills" title="Skills">SKILLS</a></li>
-                    <li><a href="#portfolio" title="Portfolio">PORTFOLIO</a></li>
-                    <li><a href="#gallery" title="Gallery">GALLERY</a></li>
-                    <li><a href="#contact" title="Contact">CONTACT</a></li>
-                </ul>
+     <section>
+        <header>
+            <div class="logo">
+                <img src="images/logo-removebg-preview.png"">
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#home" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav_check" class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </header>
 
-<div class="text-box">
-    <h1>Hey! I'm <span>Adam Zakwan</span></h1>
-    <p>An aspired computer scientist. Loves to learn something new everyday.<br>Sport enthuasist. Prefer tea over coffee.</p>
-    <a href="Resume.pdf" class="resume-btn" >Download CV</a>
-</div>
-    
+<section class="container" id="home">
+
+    <div class="text-box">
+        <h1>Hey! I'm <span>Adam Zakwan</span></h1>
+        <p>An aspired computer scientist. Loves to learn something new everyday. Sport enthuasist. Prefer tea over coffee.</p>
+        <a href="Resume.pdf" class="resume-btn" >Download CV</a>
+    </div>
 
 </section>
+
 
 <!---------About--------->
 
