@@ -486,8 +486,7 @@ span{
  }
  
  .swiper .swiper-button-prev, .swiper .swiper-button-next{
-     color: #f44336;
-     visibility: hidden;
+     color: #ffffff;
  }
  
  .swiper .swiper-pagination-bullet-active{
@@ -496,6 +495,8 @@ span{
  
  .swiper .swiper-pagination{
      height: 25%;
+     visibility: hidden;
+
  }
 
  /*-----gallery mobile-------*/
