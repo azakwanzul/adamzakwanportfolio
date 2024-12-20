@@ -316,6 +316,11 @@ span{
      background: #0bd0d3 ;
      animation: javascript 1s linear forwards;
  }
+
+.mandarin{
+     background: #0bd0d3 ;
+     animation: mandarin 1s linear forwards;
+ }
  
  .english span{
      border: 1px solid #f30808;
@@ -328,7 +333,12 @@ span{
  .css span{
      border: 1px solid #0cdb48;
  }
+
  .javascript span{
+     border: 1px solid #00bcd4;
+ }
+
+ .mandarin span{
      border: 1px solid #00bcd4;
  }
  
@@ -350,12 +360,16 @@ span{
      }
  }
  
- 
  @keyframes javascript{
      100%{
          width: 20%;
      }
  }
+
+@keyframes mandarin{
+     100%{
+         width: 20%;
+     }
  
  /*-------progress bar mobile------*/
  
