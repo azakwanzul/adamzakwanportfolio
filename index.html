@@ -3,7 +3,7 @@
 <html lang="en" class="bg-color">
 <head>
     <meta charset="UTF8">
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,14 +12,8 @@
 <body>
      <section>
         <header>
-            <div class="logo">
-                <img src="images/logo-removebg-preview.png">
-            </div>
             <input type="checkbox" id="nav_check" hidden>
             <nav>
-                <div class="logo">
-                    <img src="logo.png" alt="">
-                </div>
                 <ul>
                     <li>
                         <a href="#home" class="active">Home</a>
@@ -53,7 +47,7 @@
     <div class="text-box">
         <h1>Hey! I'm <span>Adam Zakwan</span></h1>
         <p>Someone said to me that the more you learn, the more you realize how stupid you are. In the path of discovering my stupidity, somehow I ended up here.</p>
-        <a href="Resume - Adam Zakwan.pdf" class="resume-btn" >Download CV</a>
+        <a href="AdamZakwanZulkifli_CV.pdf" class="resume-btn" >Download CV</a>
     </div>
 
 </section>
@@ -103,14 +97,9 @@
                 <div class="progress-bar">
                     <div class="javascript"><span>20%</span></div>
                 </div>
-                <h2>Mandarin</h2>
-                <div class="progress-bar">
-                    <div class="mandarin"><span>10%</span></div>
-                </div>
             </div>
         </div>
 </section>
-     </section>
 
 <!-----------Portfolio--------->
 
@@ -244,7 +233,33 @@
     },
   
   });</script>
+<script>
+    // Animate progress bars when scrolled to
+    const progressBars = document.querySelectorAll('.progress-bar div');
+    
+    function animateProgressBars() {
+    progressBars.forEach((bar, index) => {
+        const width = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => {
+            bar.style.width = width;
+        }, index * 2000); // Staggered animation
+    });
+}
 
+    // Run on page load
+    window.addEventListener('load', animateProgressBars);
+
+    // Run when skills section is scrolled to
+    const skillsSection = document.querySelector('.skills');
+    const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            animateProgressBars();
+        }
+    }, {threshold: 0.5});
+
+    observer.observe(skillsSection);
+</script>
 
 </body>
 </html>

@@ -54,10 +54,13 @@
      background: #f44336;
  }
  nav ul li a.active {
-     color: #fff;
-     background: #f44336;
- }
+    color: #fff;
+    background: none; /* Remove the background color */
+}
 
+nav ul li a.active:hover {
+    background: #f44336; /* Add background only on hover */
+}
  
  .hamburger {
      display: none;
@@ -317,11 +320,6 @@ span{
      background: #0bd0d3 ;
      animation: javascript 1s linear forwards;
  }
-
-.mandarin{
-     background: #0bd0d3 ;
-     animation: mandarin 1s linear forwards;
- }
  
  .english span{
      border: 1px solid #f30808;
@@ -339,10 +337,6 @@ span{
      border: 1px solid #00bcd4;
  }
 
- .mandarin span{
-     border: 1px solid #00bcd4;
- }
- 
  @keyframes english{
      100%{
          width: 90%;
@@ -367,11 +361,6 @@ span{
      }
  }
 
-@keyframes mandarin{
-     100%{
-         width: 10%;
-     }
-}
  
  /*-------progress bar mobile------*/
  
@@ -391,18 +380,21 @@ span{
      padding-top: 100px;
  }
  
- .portfolio-col{
+ .portfolio-col {
     flex-basis: 32%;
-     border-radius: 10px;
-     margin-bottom: 30px;
-     position: relative;
-     overflow: hidden
- }
- 
- .portfolio-col img{
-     width: 100%;
-     display: block;
- }
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Fixed height */
+}
+
+.portfolio-col img {
+    width: 100%;
+    height: 100%; /* Make image fill container */
+    object-fit: cover; /* Maintain aspect ratio while filling space */
+    display: block;
+}
 
  div .portfolio-col h3{
     font-size: 15px;
