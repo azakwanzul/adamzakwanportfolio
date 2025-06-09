@@ -1,265 +1,390 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<html lang="en" class="bg-color">
+<html lang="en">
 <head>
-    <meta charset="UTF8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Adam Zakwan Zulkifli - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-     <section>
-        <header>
-            <input type="checkbox" id="nav_check" hidden>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#gallery">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <label for="nav_check" class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </label>
-        </header>
-
-<section class="container" id="home">
-
-    <div class="text-box">
-        <h1>Hey! I'm <span>Adam Zakwan</span></h1>
-        <p>Someone said to me that the more you learn, the more you realize how stupid you are. In the path of discovering my stupidity, somehow I ended up here.</p>
-        <a href="AdamZakwanZulkifli_CV.pdf" class="resume-btn" >Download CV</a>
-    </div>
-
-</section>
-
-
-<!---------About--------->
-
-<section class="about" id="about">
-    <h1>About Me</h1>
-    <p>Loves to learn something new everyday. Sport enthuasist. Prefer tea over coffee. First to be born to a clinic assistant and a lorry driver, I am now a Yayasan Khazanah Global Scholar currently studying BA Psychology and Economics at Boston University.</p>
-    <div class="row">
-        <div class="about-col">
-            <h3>Where are you from?</h3>
-            <p>I'm from Kota Bharu, Kelantan, Malaysia</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#background" class="nav-link">Background</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#photography" class="nav-link">Photography</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        <div class="about-col">
-            <h3>What is your hobby?</h3>
-            <p>I like to read current issues, funfacts, I do watch kdrama and anime.</p>
-        </div>
-        <div class="about-col">
-            <h3>What are your future plans?</h3>
-            <p>Contribute back to the community.</p>
-        </div>
-    </div>
-</section>
+    </nav>
 
-<!-------Skills------->
-
-<section class="skills" id="skills">
-    <h1>My Skills</h1>
-    <p>My languages and coding progress so far.</p>
-        <div class="skills-col">
-            <div class="skills-lang">
-                <h2>English</h2>
-                <div class="progress-bar">
-                    <div class="english"><span>90%</span></div>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Adam Zakwan Zulkifli</h1>
+                    <h2>Psychology & Economics Student</h2>
+                    <p>Passionate about data-driven solutions and creating meaningful impact through strategic consulting and technology.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="documents/AdamZakwanZulkifli_CV.pdf" class="btn btn-secondary" download="AdamZakwanZulkifli_CV">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
                 </div>
-                <h2>HTML5</h2>
-                <div class="progress-bar">
-                    <div class="html"><span>80%</span></div>
-                </div>
-                <h2>CSS3</h2>
-                <div class="progress-bar">
-                    <div class="css"><span>65%</span></div>
-                </div>
-                <h2>JavaScript</h2>
-                <div class="progress-bar">
-                    <div class="javascript"><span>20%</span></div>
+                <div class="hero-image">
+                    <img src="images/profilepicture.jpeg" alt="Adam Zakwan Profile Picture">
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
-<!-----------Portfolio--------->
-
-<section class="portfolio" id="portfolio">
-    <h1>My Portfolio</h1>
-    <p>My achievements, involvements and leaderships varies from school to international Level.</p>
-
-    <div class="row">
-        <div class="portfolio-col">
-            <img src="images/House captain.JPG">
-            <div class="layer">
-                <h3>Topaz House Captain<br>2023-2024<br>House Cup</h3>
-            </div>
-        </div>
-        <div class="portfolio-col">
-            <img src="images/Yayasan Khazanah Awards Day.jpg">
-            <div class="layer">
-                <h3>Yayasan Khazanah Awards Day</h3>
-            </div>
-        </div>
-        <div class="portfolio-col">
-            <img src="images/dikir barat.jpg">
-            <div class="layer">
-                <h3>End of Sem Dinner x Cultural Performance Night<br>Head of Dikir Barat Performance</h3>
-            </div>
-        </div>
-        <div class="portfolio-col">
-            <img src="images/Hockey.jpg">
-            <div class="layer">
-                <h3>National Hockey HKSBP<br>Gold Medal</h3>
-            </div>
-        </div>
-        <div class="portfolio-col">
-            <img src="images/SPM.jpg">
-            <div class="layer">
-                <h3>Sijil Pelajaran Malaysia<br>8A+ 1A</h3>
-            </div>
-        </div>
-        <div class="portfolio-col">
-            <img src="images/mockiv.jpg">
-            <div class="layer">
-                <h3>SM Sains Tengku Muhammad Faris Petra<br>Vice Headboy</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-----------Gallery---------->
-
-<section class="gallery" id="gallery">
-    <h1>Gallery</h1>
-    <p>Take a glimpse of my past.</p>
-
-    <div class="row">
-        <div class="gallery-col">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide"><img src ="images/bola form5.jpg"></div>
-                  <div class="swiper-slide"><img src ="images/Hoki Penang.jpg"></div>
-                  <div class="swiper-slide"><img src ="images/with yafik.jpg"></div>
-                  <div class="swiper-slide"><img src ="images/amitans spm.jpg"></div>
-                  <div class="swiper-slide"><img src ="images/tutor.jpg"></div>
-                  <div class="swiper-slide"><img src ="images/ipgkkb.jpg"></div>
-                  <div class="swiper-slide"><img src ="images/study.jpg"></div>
+    <!-- Background Section -->
+    <section id="background" class="background">
+        <div class="container">
+            <h2 class="section-title">Background</h2>
+            
+            <!-- Education -->
+            <div class="background-category">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Boston University</h4>
+                            <p class="subtitle">B.A. Psychology and Economics | Expected Aug 2028</p>
+                            <ul>
+                                <li>GPA: 3.81 / 4.0</li>
+                                <li>Dean's List</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Kolej Yayasan UEM, Selangor, Malaysia</h4>
+                            <p class="subtitle">Cambridge International A-Level | Jun 2024</p>
+                            <ul>
+                                <li>Mathematics, Physics, Economics: 3A</li>
+                                <li>Yayasan Khazanah Global Scholarship Awards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>SM Sains Tengku Muhammad Faris Petra</h4>
+                            <p class="subtitle">Malaysia Certificate of Examination | Mar 2022</p>
+                            <ul>
+                                <li>Science Stream: 8A+ 1A</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-              
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+            <!-- Experience -->
+            <div class="background-category">
+                <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Kelantan Resource Initiatives for Students</h4>
+                            <p class="subtitle">Founder and Co-director | May 2023 - Present</p>
+                            <p>Established student-led organization focused on scholarship guidance. Helped 200+ students secure scholarships over two years.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Boston University Consulting Group</h4>
+                            <p class="subtitle">Casing Analyst | Feb 2025 - May 2025</p>
+                            <p>Semester-long program refining case interview skills, industry knowledge, and structured problem-solving through weekly practice, alumni panels, and live case study analysis.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>CAS Student Government</h4>
+                            <p class="subtitle">Internal Affairs Committee | Nov 2024 - May 2025</p>
+                            <p>Enhance YouTube presence by interviewing faculty members and releasing podcasts twice monthly, including video production and content strategy.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>Topaz Sports House</h4>
+                            <p class="subtitle">House Captain | Mar 2023 - Mar 2024</p>
+                            <p>Organized events, managed $1,500 budget, coordinated logistics for 80+ members to win house cup.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="background-category">
+                <h3><i class="fas fa-cogs"></i> Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Malay (Native)</span>
+                            <span class="skill-tag">English (Fluent)</span>
+                            <span class="skill-tag">Indonesian (Fluent)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Technical Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Microsoft Office</span>
+                            <span class="skill-tag">Adobe Photoshop</span>
+                            <span class="skill-tag">Lightroom</span>
+                            <span class="skill-tag">Google Colab</span>
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>DuitCerdik</h3>
+                        <p>A comprehensive financial management tool designed to help users track expenses, manage budgets, and make informed financial decisions.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Financial Tech</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://azakwanzul.github.io/DuitCerdik/" target="_blank" class="btn btn-small">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--------Footer----->
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="images/scholarship.JPG" alt="Scholarship Achievement">
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Yayasan Khazanah Global Scholarship</h3>
+                        <p>Received prestigious scholarship for outstanding academic performance and leadership potential.</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-image">
+                        <img src="images/housecaptain.JPG" alt="House Captain Achievement">
+                    </div>
+                    <div class="achievement-content">
+                        <h3>House Captain Leadership</h3>
+                        <p>Led Topaz Sports House to victory, managing budget and coordinating activities for 80+ members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="footer" id="contact">
-    <h2>Contact</h2>
-    <p>Keep in touch with me.</p>
-    <div class="icons">
-        <a href="https://www.facebook.com/adam.zakwan69/"><i class="fa fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/azakwanzul"><i class="fa fa fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/adam-zakwan-011a54249/"><i class="fa fa fa-linkedin"></i></a>
-        <a href="https://github.com/azakwanzul"><i class="fa fa fa-github"></i></a>
-        <a href="https://t.me/azakwanzul"><i class="fa fa fa-telegram"></i></a>
-    </div>
-    <p>Copyright <i class="fa fa fa-copyright"></i> 2025 Adam Zakwan Zulkifli</p>
-</section>
+    <!-- Photography Section -->
+    <section id="photography" class="photography">
+        <div class="container">
+            <h2 class="section-title">Photography</h2>
+            <p class="section-subtitle">Capturing moments through my lens</p>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="images/photography/arthurseat1.JPG" alt="Arthur's Seat Photography 1">
+                    <div class="photo-overlay">
+                        <h4>Arthur's Seat</h4>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photography/arthurseat2.JPG" alt="Arthur's Seat Photography 2">
+                    <div class="photo-overlay">
+                        <h4>Arthur's Seat</h4>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photography/arthurseat3.JPG" alt="Arthur's Seat Photography 3">
+                    <div class="photo-overlay">
+                        <h4>Arthur's Seat</h4>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photography/newyork.jpg" alt="New York Bridge">
+                    <div class="photo-overlay">
+                        <h4>New York</h4>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="images/photography/bostonwinter.jpg" alt="Comm Ave Snow">
+                    <div class="photo-overlay">
+                        <h4>Boston Winter</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--------JavaScript for Toggle Menu------->
-<script>
-    var navLinks = document.getElementById("navLinks")
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>adamzak1@bu.edu</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>(617) 935-3407</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Boston, MA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Adam Zakwan Zulkifli. All rights reserved.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/adam-zakwan-011a54249" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/azakwanzul" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/azakwanzul" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/adam.zakwan69/" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="https://t.me/azakwanzul" class="social-link"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
 
-<!-------Slider gallery-------->
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
 
-<script>const swiper = new Swiper('.swiper', {
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    
-    // Optional parameters
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  });</script>
-<script>
-    // Animate progress bars when scrolled to
-    const progressBars = document.querySelectorAll('.progress-bar div');
-    
-    function animateProgressBars() {
-    progressBars.forEach((bar, index) => {
-        const width = bar.style.width;
-        bar.style.width = '0%';
-        setTimeout(() => {
-            bar.style.width = width;
-        }, index * 2000); // Staggered animation
-    });
-}
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
 
-    // Run on page load
-    window.addEventListener('load', animateProgressBars);
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-    // Run when skills section is scrolled to
-    const skillsSection = document.querySelector('.skills');
-    const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            animateProgressBars();
-        }
-    }, {threshold: 0.5});
+        // Download resume functionality
+        document.getElementById('download-resume').addEventListener('click', function(e) {
+            document.getElementById('download-resume').addEventListener('click', function(e) {
+            // Track download analytics if needed
+            console.log('Resume downloaded');
+        });
+        });
 
-    observer.observe(skillsSection);
-</script>
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 
+        // Photo modal functionality
+        const photoItems = document.querySelectorAll('.photo-item img');
+        photoItems.forEach(photo => {
+            photo.addEventListener('click', () => {
+                const modal = document.createElement('div');
+                modal.className = 'photo-modal';
+                modal.innerHTML = `
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <img src="${photo.src}" alt="${photo.alt}">
+                    </div>
+                `;
+                document.body.appendChild(modal);
+                
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal || e.target.className === 'close-modal') {
+                        modal.remove();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
